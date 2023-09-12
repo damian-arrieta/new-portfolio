@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <header  className='header'>
+        <Navbar />
+        <Hero />
+    </header>
   )
 }
