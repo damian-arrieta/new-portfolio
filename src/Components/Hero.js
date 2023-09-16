@@ -47,13 +47,13 @@ function Hero() {
     <div className="hero">
       <div className="hero-left">
         <h2 className="hero-prefix">I Am</h2>
-        {screenWidth >= 425 && (
+        {screenWidth >= 320 && (
           <TrackVisibility once>
             {({ isVisible }) => (
               <div className="hero-title">
                 {isVisible &&
                   text.split(' ').map((word, index) => (
-                    <h1 key={index}>{word}</h1>
+                    <h2 key={index}>{word}</h2>
                   ))}
               </div>
             )}
@@ -62,7 +62,7 @@ function Hero() {
       </div>
       <div className="hero-right">
         <p className="hero-description">
-          Hola! Soy Damián Arrieta, desarrollador frontend, experto en ventas, relaciones con clientes y logística. Tengo más de 5 años de experiencia estableciendo relaciones sólidas y brindando soluciones.
+          Soy un desarrollador frontend, experto en ventas, relaciones con clientes y logística. Me gusta la música electrónica y me desempeño como DJ y Productor de Techno. Amo el color negro, el café y el arte 🖤
         </p>
       </div>
     </div>
